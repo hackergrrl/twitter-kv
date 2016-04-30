@@ -1,14 +1,8 @@
 var tweets = require('../latest-tweets')
 
-module.exports = function (key, cb) {
-  var addr = key.split('/')
-
-  if (addr.length !== 4) return new Error('malform addr')
-  if (addr[0] !== '') return new Error('malformed addr')
-  if (addr[1] !== 'twitter') return new Error('malformed addr')
-
-  var user = addr[2]
-  var key = addr[3]
+module.exports = function (user, key, cb) {
+  if (!user) return new Error('missing username')
+  if (!key) return new Error('missing key')
 
   // tweets = function (user, cb) {
   //   cb(null, [
