@@ -1,22 +1,8 @@
-var tweets = require('../latest-tweets')
+var tweets = require('latest-tweets')
 
 module.exports = function (user, key, cb) {
   if (!user) return new Error('missing username')
   if (!key) return new Error('missing key')
-
-  // tweets = function (user, cb) {
-  //   cb(null, [
-  //     {
-  //       content: 'test = foo'
-  //     },
-  //     {
-  //       content: 'test = bar'
-  //     },
-  //     {
-  //       content: 'test = quux'
-  //     },
-  //   ])
-  // }
 
   tweets(user, function (err, res) {
     if (err) return cb(err)
