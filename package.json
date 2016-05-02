@@ -10,7 +10,7 @@
     "test": "tape test/*.js"
   },
   "dependencies": {
-    "latest-tweets": "^0.1.1"
+    "latest-tweets": "^0.1.2"
   },
   "devDependencies": {
     "tape": "*"
