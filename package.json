@@ -1,7 +1,7 @@
 {
   "name": "twitter-kv",
   "description": "key-value store over twitter user feeds",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "url": "git://github.com/noffle/twitter-kv.git"
   },
