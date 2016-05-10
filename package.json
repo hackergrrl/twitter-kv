@@ -1,6 +1,6 @@
 {
   "name": "twitter-kv",
-  "description": "key-value store over twitter user feeds",
+  "description": "Short lived key-value store using Twitter user feeds.",
   "version": "0.0.3",
   "repository": {
     "url": "git://github.com/noffle/twitter-kv.git"
@@ -14,5 +14,6 @@
   },
   "devDependencies": {
     "tape": "*"
-  }
+  },
+  "license": "ISC"
 }
